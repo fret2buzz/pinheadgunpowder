@@ -56,7 +56,7 @@
 
     <main class="l-base-main">
         <section id="band" class="l-base-section">
-            <h1 class="b-title m-1"><span>1. Band</span></h1>
+            <h1 class="b-title m-1"><span>Band</span></h1>
             <div class="l-base-container b-band">
                 <div class="b-band-item">
                     <img src="https://media.publit.io/file/pinheadgunpowder/m01.gif"loading="lazy" width="300" height="400" alt="Billie Joe">
@@ -77,7 +77,7 @@
             </div>
         </section>
         <section id="music" class="l-base-section">
-            <h1 class="b-title m-2"><span>2. Music</span></h1>
+            <h1 class="b-title m-2"><span>Music</span></h1>
             <div class="l-base-container b-music">
                 {%- for item in music | reverse -%}
                     <div class="b-music-item">
@@ -101,7 +101,7 @@
             </div>
         </section>
         <section id="video" class="l-base-section">
-            <h1 class="b-title m-3"><span>3. Video</span></h1>
+            <h1 class="b-title m-3"><span>Video</span></h1>
             <div class="l-base-container b-video">
                 {%- for item in video | reverse -%}
                     <div class="b-video-item">
@@ -121,7 +121,7 @@
             </div>
         </section>
         <section id="photo" class="l-base-section">
-            <h1 class="b-title m-4"><span>4. Photo</span></h1>
+            <h1 class="b-title m-4"><span>Photos<br /> ({{ photo | length }})</span></h1>
             <div class="l-base-container b-photo">
                 {%- for item in photo -%}
                         <a

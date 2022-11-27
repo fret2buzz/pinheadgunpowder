@@ -594,7 +594,7 @@ a:hover {
 
 .b-title {
   color: var(--color-secondary);
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 400;
   margin: 10px 0 20px;
   position: sticky;
@@ -622,7 +622,6 @@ a:hover {
   pointer-events: none;
 }
 .b-title.m-1 {
-  font-size: 46px;
   color: var(--color-text-dimmed);
 }
 .b-title.m-1 span {
@@ -632,7 +631,6 @@ a:hover {
   background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
 }
 .b-title.m-2 {
-  font-size: 40px;
   color: var(--color-primary);
 }
 .b-title.m-2 span {
@@ -642,7 +640,6 @@ a:hover {
   background-image: url("https://media.publit.io/file/pinheadgunpowder/over3.png");
 }
 .b-title.m-3 {
-  font-size: 42px;
   color: var(--color-secondary);
 }
 .b-title.m-3 span {
@@ -652,7 +649,6 @@ a:hover {
   background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
 }
 .b-title.m-4 {
-  font-size: 46px;
   color: var(--color-text-dimmed);
 }
 .b-title.m-4 span {
