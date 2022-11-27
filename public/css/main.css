@@ -698,6 +698,11 @@ a:hover {
   padding: 10px 10px;
   clip-path: polygon(57% 3%, 100% 1%, 99% 40%, 95% 88%, 1% 100%, 0 2%);
 }
+@media (max-width: 767px) {
+  .b-music-title {
+    font-size: 18px;
+  }
+}
 .b-music-info {
   font-size: 16px;
   font-weight: 600;
@@ -737,7 +742,7 @@ a:hover .b-music-image img {
 @media (max-width: 767px) {
   .b-video {
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .b-video-link {
@@ -759,6 +764,11 @@ a:hover .b-music-image img {
   font-weight: 600;
   padding: 10px 10px;
   clip-path: polygon(57% 3%, 100% 1%, 99% 40%, 95% 88%, 1% 100%, 0 2%);
+}
+@media (max-width: 767px) {
+  .b-video-title {
+    font-size: 14px;
+  }
 }
 .b-video-image {
   position: relative;
