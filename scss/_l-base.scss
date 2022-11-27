@@ -1,0 +1,15 @@
+.l-base-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.l-base-main {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 80px;
+    padding: 0 20px;
+}
+
+.l-base-section {
+    scroll-margin-top: 80px;
+}

@@ -1,0 +1,68 @@
+.b-nav {
+    &-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+        list-style: none;
+    }
+
+    &-list_item {
+        position: relative;
+    }
+
+    &-list_link {
+        color: var(--color-text-dimmed);
+        display: block;
+        position: relative;
+        text-decoration: none;
+        font-size: 22px;
+        text-transform: uppercase;
+
+        &::after {
+            z-index: 3;
+            background-size: contain;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            content: '';
+            height: 26px;
+            left: 0;
+            position: absolute;
+            top: 70%;
+            width: 100%;
+            transition: clip-path 0.2s ease-out;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        }
+
+        &.m-1::after {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over1.png');
+        }
+
+        &.m-2::after {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over2.png');
+        }
+
+        &.m-3::after {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over3.png');
+        }
+
+        &.m-4::after {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over4.png');
+        }
+
+        span {
+            display: block;
+            z-index: 1;
+            background: 0 0;
+        }
+
+        &:hover {
+            color: var(--color-text);
+
+            &::after {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'dookieregular';
+    src: url('../fonts/dookie-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg) url('https://media.publit.io/file/pinheadgunpowder/bg.webp') 50% top;
+    color: var(--color-text);
+    font-family: 'dookieregular';
+    font-size: 20px;
+    position: relative;
+}
+
+a {
+    color: var(--color-text);
+
+    &:hover {
+        color: var(--color-text);
+    }
+}

@@ -1,0 +1,84 @@
+.b-title {
+    color: var(--color-secondary);
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    position: sticky;
+    text-transform: uppercase;
+    top: 80px;
+
+    @media (max-width: 767px) {
+        position: static;
+    }
+
+    span {
+        position: relative;
+        display: inline-block;
+
+        &::before {
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            content: '';
+            height: 26px;
+            left: 0;
+            position: absolute;
+            top: 70%;
+            width: 100%;
+            pointer-events: none;
+        }
+    }
+
+    &.m-1 {
+        font-size: 46px;
+        color: var(--color-text-dimmed);
+
+        span {
+            transform: rotate(-1deg);
+        }
+
+        span::before {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over4.png');
+        }
+    }
+
+
+    &.m-2 {
+        font-size: 40px;
+        color: var(--color-primary);
+        span {
+            transform: rotate(-2deg);
+        }
+
+        span::before {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over3.png');
+        }
+    }
+
+
+    &.m-3 {
+        font-size: 42px;
+        color: var(--color-secondary);
+
+        span {
+            transform: rotate(0deg);
+        }
+
+        span::before {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over4.png');
+        }
+    }
+
+
+    &.m-4 {
+        font-size: 46px;
+        color: var(--color-text-dimmed);
+
+        span {
+            transform: rotate(-2deg);
+        }
+
+        span::before {
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over3.png');
+        }
+    }
+}

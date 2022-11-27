@@ -1,0 +1,45 @@
+.b-logo {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+        display: none
+    }
+
+    &-image {
+        aspect-ratio: 569 / 187;
+        display: inline-block;
+        max-width: 569px;
+        position: relative;
+        width: 100%;
+
+        .m-1 {
+            opacity: 1;
+        }
+
+        .m-2 {
+            opacity: 0;
+        }
+
+        &:hover {
+            .m-1 {
+                opacity: 0;
+            }
+
+            .m-2 {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-in {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "pinheadgunpowder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @11ty/eleventy --config=.eleventy.js",
+    "watch": "node ./node_modules/sass/sass.js --load-path=node_modules --no-source-map -w \"./scss\":\"./public/css\"",
+    "scss": "node ./node_modules/sass/sass.js --load-path=node_modules --no-source-map \"./scss\":\"./public/css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
