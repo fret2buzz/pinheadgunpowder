@@ -75,7 +75,7 @@
             aspect-ratio: 3 / 4;
             background: var(--color-dark) url('https://media.publit.io/file/pinheadgunpowder/paper.png');
             background-size: cover;
-            clip-path: polygon(0% 25%, 100% 25%, 75% 100%, 25% 100%);
+            clip-path: polygon(0% 25%, 10% 15%, 40% 10%, 60% 30%, 80% 10%, 100% 25%, 90% 50%, 100% 75%, 80% 90%, 50% 100%, 20% 90%, 0% 75%, 10% 50%);
             content: '';
             left: 0;
             position: absolute;
@@ -93,8 +93,32 @@
             &::before {
                 background: var(--color-primary) url('https://media.publit.io/file/pinheadgunpowder/paper.png');
                 background-size: cover;
-                clip-path: polygon(10% 10%, 90% 10%, 80% 90%, 20% 90%);
+                clip-path: polygon(5% 20%, 25% 5%, 50% 15%, 75% 10%, 95% 30%, 85% 60%, 95% 85%, 75% 95%, 50% 85%, 25% 95%, 5% 80%, 15% 50%, 5% 30%);
             }
+        }
+
+        &:nth-child(2)::before {
+            clip-path: polygon(5% 20%, 25% 5%, 50% 15%, 75% 10%, 95% 30%, 85% 60%, 95% 85%, 75% 95%, 50% 85%, 25% 95%, 5% 80%, 15% 50%, 5% 30%);
+        }
+
+        &:nth-child(2):hover::before {
+            clip-path: polygon(10% 10%, 40% 0%, 60% 10%, 90% 5%, 100% 40%, 85% 65%, 100% 90%, 65% 95%, 40% 100%, 10% 90%, 0% 60%, 20% 50%, 0% 30%);
+        }
+
+        &:nth-child(3)::before {
+            clip-path: polygon(5% 30%, 25% 10%, 50% 5%, 75% 20%, 95% 35%, 85% 55%, 95% 75%, 70% 90%, 50% 80%, 25% 90%, 10% 70%, 15% 50%, 5% 45%);
+        }
+
+        &:nth-child(3):hover::before {
+            clip-path: polygon(0% 50%, 20% 30%, 40% 0%, 60% 30%, 80% 50%, 90% 70%, 100% 100%, 70% 90%, 50% 70%, 30% 90%, 10% 100%, 0% 75%, 10% 60%);
+        }
+
+        &:nth-child(4)::before {
+            clip-path: polygon(0% 20%, 20% 0%, 50% 10%, 70% 0%, 100% 20%, 90% 40%, 100% 60%, 80% 90%, 50% 80%, 20% 90%, 10% 60%, 5% 50%, 0% 40%);
+        }
+
+        &:nth-child(4):hover::before {
+            clip-path: polygon(10% 20%, 30% 0%, 50% 20%, 70% 10%, 90% 30%, 85% 60%, 95% 80%, 70% 90%, 50% 75%, 25% 90%, 10% 70%, 5% 50%, 10% 35%);
         }
     }
 }

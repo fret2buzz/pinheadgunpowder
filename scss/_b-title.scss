@@ -42,19 +42,20 @@
 
 
     &.m-2 {
-        color: var(--color-primary);
+        color: var(--color-text-dimmed);
+
         span {
             transform: rotate(-2deg);
         }
 
         span::before {
-            background-image: url('https://media.publit.io/file/pinheadgunpowder/over3.png');
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over4.png');
         }
     }
 
 
     &.m-3 {
-        color: var(--color-secondary);
+        color: var(--color-text-dimmed);
 
         span {
             transform: rotate(0deg);
@@ -74,7 +75,7 @@
         }
 
         span::before {
-            background-image: url('https://media.publit.io/file/pinheadgunpowder/over3.png');
+            background-image: url('https://media.publit.io/file/pinheadgunpowder/over4.png');
         }
     }
 }
