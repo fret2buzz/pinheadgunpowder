@@ -1,157 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pinhead Gunpowder</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/photoswipe.css">
-    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
-    <script src="js/main.js" type="module"></script>
-</head>
-<body class="b-page">
-    <header class="b-header">
-        <div class="b-header-logo">
-            <a class="b-header-logo_link" href="#top">
-                <img src="https://media.publit.io/file/pinheadgunpowder/logo-m.webp" width="680" height="58" alt="">
-            </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pinhead Gunpowder</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/photoswipe.css">
+        <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+        <script src="js/main.js" type="module"></script>
+    </head>
+    <body class="b-page">
+        <header class="b-header">
+            <div class="b-header-logo">
+                <a class="b-header-logo_link" href="#top">
+                    <img src="https://media.publit.io/file/pinheadgunpowder/logo-m.webp" width="680" height="58" alt="">
+                </a>
+            </div>
+
+            <div class="b-nav">
+                <ul class=b-nav-list>
+                    {%- for item in sections -%}
+                        <li class="b-nav-list_item">
+                            <a class="b-nav-list_link m-{{ forloop.index }}" href="#{{item.id}}">
+                                <span>{{ item.name }}</span>
+                            </a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </header>
+
+        <div id="top" class="b-logo">
+            <div class="b-logo-image">
+                <img
+                    class="b-logo-in"
+                    src="https://media.publit.io/file/pinheadgunpowder/logo.webp"
+                    width="694"
+                    height="111"
+                    alt="Pinhead Gunpowder"
+                >
+            </div>
         </div>
 
-        <div class="b-nav">
-            <ul class=b-nav-list>
-                <li class="b-nav-list_item">
-                    <a class="b-nav-list_link m-1" href="#band"><span>Band</span></a>
-                </li>
-                <li class="b-nav-list_item">
-                    <a class="b-nav-list_link m-2" href="#music"><span>Music</span></a>
-                </li>
-                <li class="b-nav-list_item">
-                    <a class="b-nav-list_link m-3" href="#video"><span>Video</span></a>
-                </li>
-                <li class="b-nav-list_item">
-                    <a class="b-nav-list_link m-4" href="#photo"><span>Photo</span></a>
-                </li>
-            </ul>
-        </div>
-    </header>
+        <div id="sticky"></div>
 
-    <div id="top" class="b-logo">
-        <div class="b-logo-image">
-            <img
-                class="b-logo-in"
-                src="https://media.publit.io/file/pinheadgunpowder/logo.webp"
-                width="694"
-                height="111"
-                alt="Pinhead Gunpowder"
-            >
-        </div>
-    </div>
+        <main class="l-base-main">
+            <section id="band" class="l-base-section">
+                <h1 class="b-title m-1"><span>Band</span></h1>
 
-    <div id="sticky"></div>
-
-    <main class="l-base-main">
-        <section id="band" class="l-base-section">
-            <h1 class="b-title m-1"><span>Band</span></h1>
-            <div class="l-base-container b-band">
-                <div class="b-band-item">
-                    <img src="https://media.publit.io/file/pinheadgunpowder/m01.webp"loading="lazy" width="300" height="400" alt="Billie Joe">
-                    <div class="b-band-label"><div class="b-band-name">Billie Joe</div> <span class="b-band-type">guitar, vocals</span></div>
+                <div class="l-base-container b-band">
+                    {%- assign bandData = band | reverse -%}
+                    {%- for item in bandData -%}
+                        {%- include 'bandItem' -%}
+                    {%- endfor -%}
                 </div>
-                <div class="b-band-item">
-                    <img src="https://media.publit.io/file/pinheadgunpowder/m02.webp" loading="lazy" width="300" height="400" alt="Aaron">
-                    <div class="b-band-label"><div class="b-band-name">Aaron</div> <span class="b-band-type">drums</span></div>
+            </section>
+
+            <section id="music" class="l-base-section">
+                <h1 class="b-title m-2"><span>Music</span></h1>
+
+                <div class="l-base-container b-music">
+                    {%- assign musicData = music | reverse -%}
+                    {%- for item in musicData -%}
+                        {%- include 'musicItem' -%}
+                    {%- endfor -%}
                 </div>
-                <div class="b-band-item">
-                    <img src="https://media.publit.io/file/pinheadgunpowder/m03.webp" loading="lazy" width="300" height="400" alt="Jason">
-                    <div class="b-band-label"><div class="b-band-name">Jason</div> <span class="b-band-type">guitar, vocals</span></div>
+            </section>
+
+            <section id="video" class="l-base-section">
+                <h1 class="b-title m-3"><span>Video</span></h1>
+
+                <div class="l-base-container b-video">
+                    {%- assign videoData = video | reverse -%}
+                    {%- for item in videoData -%}
+                        {%- include 'videoItem' -%}
+                    {%- endfor -%}
                 </div>
-                <div class="b-band-item">
-                    <img src="https://media.publit.io/file/pinheadgunpowder/m04.webp" loading="lazy" width="300" height="400" alt="Bill">
-                    <div class="b-band-label"><div class="b-band-name">Bill</div> <span class="b-band-type">bass, vocals</span></div>
+            </section>
+
+            <section id="photos" class="l-base-section">
+                <h1 class="b-title m-4"><span>Photos</span></h1>
+
+                <div class="l-base-container b-photo">
+                    {%- assign photoData = photos | reverse -%}
+                    {%- for item in photoData -%}
+                        {%- include 'photosItem' -%}
+                    {%- endfor -%}
                 </div>
-            </div>
-        </section>
-
-        <section id="music" class="l-base-section">
-            <h1 class="b-title m-2"><span>Music</span></h1>
-            <div class="l-base-container b-music">
-                {%- assign musicData = music | reverse -%}
-                {%- for item in musicData -%}
-                    <div class="b-music-item">
-                        <a class="b-music-link" href="{{ item.link }}">
-                            {%- if item.image -%}
-                            <div class="b-music-image">
-                                <img
-                                    src="https://i.ytimg.com/vi/{{ item.image }}/hqdefault.jpg"
-                                    loading="lazy"
-                                    alt="{{ item.title }}"
-                                />
-                            </div>
-                            {%- else -%}
-                            <div class="b-music-image">
-                                <img
-                                    src="{{ item.imageUrl }}"
-                                    loading="lazy"
-                                    alt="{{ item.title }}"
-                                />
-                            </div>
-                            {%- endif -%}
-
-                            <div class="b-music-title">{{ item.title }}</div>
-                            <div class="b-music-info">
-                                <div class="b-music-year">{{ item.year }}</div>
-                                <div class="b-music-type">{{ item.type }}</div>
-                            </div>
-                        </a>
-                    </div>
-                {%- endfor -%}
-            </div>
-        </section>
-
-        <section id="video" class="l-base-section">
-            <h1 class="b-title m-3"><span>Video</span></h1>
-            <div class="l-base-container b-video">
-                {%- assign videoData = video | reverse -%}
-                {%- for item in videoData -%}
-                    <div class="b-video-item">
-                        <a class="b-video-link" href="https://www.youtube.com/watch?v={{ item.videoId }}">
-                            <div class="b-video-image">
-                                <img
-                                    src="https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg"
-                                    loading="lazy"
-                                    alt="{{ item.title }}"
-                                />
-                            </div>
-
-                            <div class="b-video-title">{{ item.title }}</div>
-                        </a>
-                    </div>
-                {%- endfor -%}
-            </div>
-        </section>
-
-        <section id="photo" class="l-base-section">
-            <h1 class="b-title m-4"><span>Photos</span></h1>
-            <div class="l-base-container b-photo">
-                {%- for item in photo -%}
-                    <a
-                        class="b-photo-item"
-                        href="https://media.publit.io/file/pinheadgunpowder1/{{ item.public_id }}.webp"
-                        data-pswp-width="{{ item.width }}"
-                        data-pswp-height="{{ item.height }}"
-                        style="--width: {{item.width }}; --height: {{ item.height }};"
-                    >
-                        <img
-                            src="https://media.publit.io/file/h_150/pinheadgunpowder1/{{ item.public_id }}.webp"
-                            loading="lazy"
-                            width="150"
-                            height="150"
-                            alt="{{ item.public_id }}"
-                        />
-                    </a>
-                {%- endfor -%}
-            </div>
-        </section>
-    </main>
-</body>
+            </section>
+        </main>
+    </body>
 </html>

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Billie Joe",
+        "image": "https://media.publit.io/file/pinheadgunpowder/m01.webp",
+        "role": "guitar, vocals"
+    },
+    {
+        "name": "Aaron",
+        "image": "https://media.publit.io/file/pinheadgunpowder/m02.webp",
+        "role": "drums"
+    },
+    {
+        "name": "Jason",
+        "image": "https://media.publit.io/file/pinheadgunpowder/m03.webp",
+        "role": "guitar, vocals"
+    },
+    {
+        "name": "Bill",
+        "image": "https://media.publit.io/file/pinheadgunpowder/m04.webp",
+        "role": "bass"
+    }
+]

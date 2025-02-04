@@ -1,0 +1,26 @@
+{%- if item.image -%}
+    {%- assign baseUrl = "https://i.ytimg.com/vi/" -%}
+    {%- assign imagePath = item.image | append: "/hqdefault.jpg" -%}
+    {%- assign imageUrl = baseUrl | append: imagePath -%}
+{%- else -%}
+    {%- assign imageUrl = item.imageUrl -%}
+{%- endif -%}
+
+<div class="b-music-item">
+    <a class="b-music-link" href="{{ item.link }}">
+        <div class="b-music-image">
+            <img
+                src="{{ imageUrl }}"
+                loading="lazy"
+                alt="{{ item.title }}"
+            />
+        </div>
+
+        <div class="b-music-title">{{ item.title }}</div>
+        <div class="b-music-info">
+            <div class="b-music-year">{{ item.year }}</div>
+            <div class="b-music-type">{{ item.type }}</div>
+        </div>
+    </a>
+</div>
+
