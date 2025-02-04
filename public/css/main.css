@@ -530,8 +530,9 @@ a:hover {
   display: block;
   position: relative;
   text-decoration: none;
-  font-size: 22px;
-  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1;
+  padding: 2px 5px;
 }
 .b-nav-list_link::after {
   z-index: 3;
@@ -547,28 +548,14 @@ a:hover {
   transition: clip-path 0.2s ease-out;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
-.b-nav-list_link.m-1::after {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over1.png");
-}
-.b-nav-list_link.m-2::after {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over1.png");
-}
-.b-nav-list_link.m-3::after {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
-}
-.b-nav-list_link.m-4::after {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
-}
 .b-nav-list_link span {
   display: block;
   z-index: 1;
   background: 0 0;
 }
 .b-nav-list_link:hover {
-  color: var(--color-text);
-}
-.b-nav-list_link:hover::after {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  color: var(--color-bg);
+  background: var(--color-secondary) url("https://media.publit.io/file/pinheadgunpowder/paper.png");
 }
 
 .b-logo {
@@ -590,18 +577,6 @@ a:hover {
   position: relative;
   width: 100%;
 }
-.b-logo-image .m-1 {
-  opacity: 1;
-}
-.b-logo-image .m-2 {
-  opacity: 0;
-}
-.b-logo-image:hover .m-1 {
-  opacity: 0;
-}
-.b-logo-image:hover .m-2 {
-  opacity: 1;
-}
 .b-logo-in {
   position: absolute;
   left: 0;
@@ -612,12 +587,10 @@ a:hover {
 
 .b-title {
   color: var(--color-secondary);
-  font-size: 26px;
+  font-size: 46px;
   font-weight: 400;
   margin: 10px 0 20px;
-  position: sticky;
-  text-transform: uppercase;
-  top: 80px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .b-title {
@@ -642,44 +615,20 @@ a:hover {
 .b-title.m-1 {
   color: var(--color-text-dimmed);
 }
-.b-title.m-1 span {
-  transform: rotate(-1deg);
-}
-.b-title.m-1 span::before {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
-}
 .b-title.m-2 {
   color: var(--color-text-dimmed);
-}
-.b-title.m-2 span {
-  transform: rotate(-2deg);
-}
-.b-title.m-2 span::before {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
 }
 .b-title.m-3 {
   color: var(--color-text-dimmed);
 }
-.b-title.m-3 span {
-  transform: rotate(0deg);
-}
-.b-title.m-3 span::before {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
-}
 .b-title.m-4 {
   color: var(--color-text-dimmed);
-}
-.b-title.m-4 span {
-  transform: rotate(-2deg);
-}
-.b-title.m-4 span::before {
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/over4.png");
 }
 
 .b-music {
   display: grid;
-  gap: 50px;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
 }
 @media (max-width: 767px) {
   .b-music {
@@ -737,7 +686,7 @@ a:hover {
   overflow: hidden;
 }
 .b-music-image img {
-  filter: brightness(0.5) saturate(0%);
+  filter: brightness(0.8);
   aspect-ratio: 1/1;
   height: auto;
   object-fit: cover;
@@ -745,7 +694,7 @@ a:hover {
   width: 100%;
 }
 a:hover .b-music-image img {
-  filter: brightness(1) saturate(100%);
+  filter: brightness(1.2);
 }
 
 .b-video {
@@ -827,13 +776,13 @@ a:hover .b-music-image img {
   overflow: hidden;
 }
 .b-photo img {
-  filter: brightness(0.7) saturate(0%);
+  filter: brightness(0.7);
   position: absolute;
   width: 100%;
   height: 100%;
 }
 .b-photo img:hover {
-  filter: brightness(1) saturate(100%);
+  filter: brightness(1.2);
 }
 
 .pswp {

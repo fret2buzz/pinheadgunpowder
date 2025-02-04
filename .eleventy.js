@@ -6,12 +6,6 @@ module.exports = function (config) {
         return util.inspect(value);
     });
 
-    config.addFilter("postDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj, {
-            zone: "Europe/Amsterdam",
-        }).setLocale('en').toISODate();
-    });
-
     // You can return your Config object (optional).
     return {
         dir: {
@@ -20,10 +14,10 @@ module.exports = function (config) {
             includes: 'includes',
             layouts: 'layouts',
         },
-        dataTemplateEngine: 'njk',
-        markdownTemplateEngine: 'njk',
-        htmlTemplateEngine: 'njk',
+        dataTemplateEngine: 'liquid',
+        markdownTemplateEngine: 'liquid',
+        htmlTemplateEngine: 'liquid',
         passthroughFileCopy: true,
-        templateFormats: ['md', 'njk', '11ty.js'],
+        templateFormats: ['md', 'liquid', '11ty.js']
     };
 };

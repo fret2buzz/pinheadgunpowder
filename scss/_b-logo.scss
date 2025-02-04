@@ -15,24 +15,6 @@
         max-width: 694px;
         position: relative;
         width: 100%;
-
-        .m-1 {
-            opacity: 1;
-        }
-
-        .m-2 {
-            opacity: 0;
-        }
-
-        &:hover {
-            .m-1 {
-                opacity: 0;
-            }
-
-            .m-2 {
-                opacity: 1;
-            }
-        }
     }
 
     &-in {
