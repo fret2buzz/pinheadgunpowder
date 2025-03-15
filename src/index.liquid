@@ -9,7 +9,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
         <link rel="icon" type="image/png" sizes="192x192" href="favicon/favicon-192.png">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="/favicon.ico">
         <!-- Apple Touch Icon -->
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-apple.png">
         <script src="js/main.js" type="module"></script>
@@ -32,9 +32,9 @@
                     </ul>
                 </div>
             </header>
-            <main>
+            <main class="flex flex-col gap-8">
                 <section id="band">
-                    <h1 class="text-center uppercase text-6xl">Band</h1>
+                    <h1 class="sr-only">Band</h1>
                     <div class="grid grid-cols-12 gap-4">
                         {%- assign bandData = band | reverse -%}
                         {%- for item in bandData -%}
@@ -43,7 +43,7 @@
                     </div>
                 </section>
                 <section id="music" class="l-base-section">
-                    <h1 class="text-center uppercase text-6xl">Music</h1>
+                    <h1 class="sr-only">Music</h1>
                     <div class="grid grid-cols-12 gap-4">
                         {%- assign musicData = music | reverse -%}
                         {%- for item in musicData -%}
@@ -52,7 +52,7 @@
                     </div>
                 </section>
                 <section id="video" class="l-base-section">
-                    <h1 class="text-center uppercase text-6xl">Video</h1>
+                    <h1 class="sr-only">Video</h1>
                     <div class="grid grid-cols-12 gap-4">
                         {%- assign videoData = video | reverse -%}
                         {%- for item in videoData -%}
@@ -61,7 +61,7 @@
                     </div>
                 </section>
                 <section style="display: none;" id="photos" class="l-base-section">
-                    <h1 class="b-title m-4"><span>Photos</span></h1>
+                    <h1 class="sr-only">Photos</h1>
                     <div class="l-base-container b-photo">
                         {%- assign photoData = photos | reverse -%}
                         {%- for item in photoData -%}
