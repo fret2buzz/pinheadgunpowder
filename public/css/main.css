@@ -1,790 +1,321 @@
-:root {
-  --color-text: #ededed;
-  --color-text-dimmed: #bbb;
-  --color-bg: #000;
-  --color-dark: #333;
-  --color-secondary: #9a8a74;
-  --color-primary: #22a7ac;
-  --font-regular: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-}
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
-
-@font-face {
-  font-family: "dookieregular";
-  src: url("../fonts/dookie-regular-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-html {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--color-bg) url("https://media.publit.io/file/pinheadgunpowder/bg.webp") 50% top;
-  color: var(--color-text);
-  font-family: "dookieregular";
-  font-size: 20px;
-  position: relative;
-}
-
-a {
-  color: var(--color-text);
-}
-a:hover {
-  color: var(--color-text);
-}
-
-.l-base-container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.l-base-main {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 80px;
-  padding: 0 20px;
-}
-
-.l-base-section {
-  scroll-margin-top: 80px;
-}
-
-.b-band {
-  display: grid;
-  font-family: var(--font-regular);
-  gap: 50px;
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 767px) {
-  .b-band {
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+/*! tailwindcss v4.0.14 | MIT License | https://tailwindcss.com */
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-gray-500: oklch(0.551 0.027 264.364);
+    --color-gray-800: oklch(0.278 0.033 256.848);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-5xl: 64rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --aspect-video: 16 / 9;
+    --default-font-family: var(--font-sans);
+    --default-font-feature-settings: var(--font-sans--font-feature-settings);
+    --default-font-variation-settings: var(
+      --font-sans--font-variation-settings
+    );
+    --default-mono-font-family: var(--font-mono);
+    --default-mono-font-feature-settings: var(
+      --font-mono--font-feature-settings
+    );
+    --default-mono-font-variation-settings: var(
+      --font-mono--font-variation-settings
+    );
   }
 }
-.b-band-label {
-  position: relative;
-  text-align: center;
-  top: -20px;
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var( --default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" );
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var( --default-font-variation-settings, normal );
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    line-height: inherit;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var( --default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace );
+    font-feature-settings: var( --default-mono-font-feature-settings, normal );
+    font-variation-settings: var( --default-mono-font-variation-settings, normal );
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+    color: color-mix(in oklab, currentColor 50%, transparent);
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
 }
-.b-band-name {
-  background: var(--color-secondary) url("https://media.publit.io/file/pinheadgunpowder/paper.png");
-  background-size: cover;
-  clip-path: polygon(57% 3%, 100% 1%, 99% 40%, 95% 100%, 1% 100%, 0 2%);
-  color: var(--color-bg);
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 10px 20px;
-}
-.b-band-type {
-  color: var(--color-text-dimmed);
-  display: block;
-  font-size: 22px;
-  font-weight: 400;
-}
-.b-band-item {
-  position: relative;
-}
-.b-band-item img {
-  aspect-ratio: 300/400;
-  filter: brightness(0.7);
-  height: auto;
-  transform: scale(0.9);
-  transition: transform 0.5s ease-out, filter 0.5s ease-out;
-  width: 100%;
-}
-.b-band-item:nth-child(1) .b-band-name {
-  transform: rotate(-2deg);
-}
-.b-band-item:nth-child(2) .b-band-name {
-  transform: rotate(1deg);
-}
-.b-band-item:nth-child(3) .b-band-name {
-  transform: rotate(-3deg);
-}
-.b-band-item:nth-child(4) .b-band-name {
-  transform: rotate(4deg);
-}
-.b-band-item:nth-child(2), .b-band-item:nth-child(4) {
-  top: -5%;
-}
-.b-band-item:nth-child(1), .b-band-item:nth-child(3) {
-  top: 5%;
-}
-.b-band-item::before {
-  aspect-ratio: 3/4;
-  background: var(--color-dark) url("https://media.publit.io/file/pinheadgunpowder/paper.png");
-  background-size: cover;
-  clip-path: polygon(0% 25%, 10% 15%, 40% 10%, 60% 30%, 80% 10%, 100% 25%, 90% 50%, 100% 75%, 80% 90%, 50% 100%, 20% 90%, 0% 75%, 10% 50%);
-  content: "";
-  left: 0;
-  position: absolute;
-  top: 0;
-  transition: clip-path 0.5s ease-out, background 0.3s ease-out;
-  width: 100%;
-}
-.b-band-item:hover img {
-  filter: brightness(0.9);
-  transform: scale(1);
-}
-.b-band-item:hover::before {
-  background: var(--color-primary) url("https://media.publit.io/file/pinheadgunpowder/paper.png");
-  background-size: cover;
-  clip-path: polygon(5% 20%, 25% 5%, 50% 15%, 75% 10%, 95% 30%, 85% 60%, 95% 85%, 75% 95%, 50% 85%, 25% 95%, 5% 80%, 15% 50%, 5% 30%);
-}
-.b-band-item:nth-child(2)::before {
-  clip-path: polygon(5% 20%, 25% 5%, 50% 15%, 75% 10%, 95% 30%, 85% 60%, 95% 85%, 75% 95%, 50% 85%, 25% 95%, 5% 80%, 15% 50%, 5% 30%);
-}
-.b-band-item:nth-child(2):hover::before {
-  clip-path: polygon(10% 10%, 40% 0%, 60% 10%, 90% 5%, 100% 40%, 85% 65%, 100% 90%, 65% 95%, 40% 100%, 10% 90%, 0% 60%, 20% 50%, 0% 30%);
-}
-.b-band-item:nth-child(3)::before {
-  clip-path: polygon(5% 30%, 25% 10%, 50% 5%, 75% 20%, 95% 35%, 85% 55%, 95% 75%, 70% 90%, 50% 80%, 25% 90%, 10% 70%, 15% 50%, 5% 45%);
-}
-.b-band-item:nth-child(3):hover::before {
-  clip-path: polygon(0% 50%, 20% 30%, 40% 0%, 60% 30%, 80% 50%, 90% 70%, 100% 100%, 70% 90%, 50% 70%, 30% 90%, 10% 100%, 0% 75%, 10% 60%);
-}
-.b-band-item:nth-child(4)::before {
-  clip-path: polygon(0% 20%, 20% 0%, 50% 10%, 70% 0%, 100% 20%, 90% 40%, 100% 60%, 80% 90%, 50% 80%, 20% 90%, 10% 60%, 5% 50%, 0% 40%);
-}
-.b-band-item:nth-child(4):hover::before {
-  clip-path: polygon(10% 20%, 30% 0%, 50% 20%, 70% 10%, 90% 30%, 85% 60%, 95% 80%, 70% 90%, 50% 75%, 25% 90%, 10% 70%, 5% 50%, 10% 35%);
-}
-
-.b-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  left: 0;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  transition: background-color 0.3s ease-out;
-}
-@media (max-width: 767px) {
-  .b-header {
-    position: static;
+@layer utilities {
+  .col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+  .m-3 {
+    margin: calc(var(--spacing) * 3);
+  }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .block {
     display: block;
   }
-}
-.m-stuck .b-header {
-  background-color: var(--color-bg);
-}
-.b-header img {
-  filter: saturate(0%);
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.2s ease-out;
-  width: 400px;
-}
-@media (max-width: 767px) {
-  .b-header img {
-    opacity: 1;
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
+  .w-full {
     width: 100%;
   }
-}
-.m-stuck .b-header img {
-  opacity: 1;
-}
-.b-header-logo_link {
-  pointer-events: none;
-}
-.m-stuck .b-header-logo_link {
-  pointer-events: auto;
-}
-.b-header-logo_link:hover img {
-  filter: saturate(100%);
-}
-
-.b-nav-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 20px;
-  list-style: none;
-}
-.b-nav-list_item {
-  position: relative;
-}
-.b-nav-list_link {
-  color: var(--color-text-dimmed);
-  display: block;
-  position: relative;
-  text-decoration: none;
-  font-size: 30px;
-  line-height: 1;
-  padding: 2px 5px;
-}
-.b-nav-list_link::after {
-  z-index: 3;
-  background-size: contain;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  content: "";
-  height: 26px;
-  left: 0;
-  position: absolute;
-  top: 70%;
-  width: 100%;
-  transition: clip-path 0.2s ease-out;
-  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-}
-.b-nav-list_link span {
-  display: block;
-  z-index: 1;
-  background: 0 0;
-}
-.b-nav-list_link:hover {
-  color: var(--color-bg);
-  background: var(--color-secondary) url("https://media.publit.io/file/pinheadgunpowder/paper.png");
-}
-
-.b-logo {
-  display: flex;
-  height: 100vh;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 767px) {
-  .b-logo {
-    display: none;
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
-}
-.b-logo-image {
-  aspect-ratio: 694/111;
-  display: inline-block;
-  max-width: 694px;
-  position: relative;
-  width: 100%;
-}
-.b-logo-in {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.b-title {
-  color: var(--color-secondary);
-  font-size: 46px;
-  font-weight: 400;
-  margin: 10px 0 20px;
-  text-align: center;
-}
-@media (max-width: 767px) {
-  .b-title {
-    position: static;
+  .flex-col {
+    flex-direction: column;
   }
-}
-.b-title span {
-  position: relative;
-  display: inline-block;
-}
-.b-title span::before {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  content: "";
-  height: 26px;
-  left: 0;
-  position: absolute;
-  top: 70%;
-  width: 100%;
-  pointer-events: none;
-}
-.b-title.m-1 {
-  color: var(--color-text-dimmed);
-}
-.b-title.m-2 {
-  color: var(--color-text-dimmed);
-}
-.b-title.m-3 {
-  color: var(--color-text-dimmed);
-}
-.b-title.m-4 {
-  color: var(--color-text-dimmed);
-}
-
-.b-music {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
-}
-@media (max-width: 767px) {
-  .b-music {
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+  .items-center {
+    align-items: center;
   }
-}
-.b-music-link {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  text-decoration: none;
-}
-.b-music-link:hover .b-music-title {
-  transform: rotate(1deg);
-}
-.b-music-link:hover .b-music-year {
-  transform: rotate(-2deg);
-}
-.b-music-link:hover .b-music-type {
-  transform: rotate(-1deg);
-}
-.b-music-title {
-  font-size: 24px;
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/paper.png");
-  background-color: var(--color-text-dimmed);
-  background-size: cover;
-  color: var(--color-bg);
-  font-weight: 600;
-  padding: 10px 10px;
-  clip-path: polygon(57% 3%, 100% 1%, 99% 40%, 95% 88%, 1% 100%, 0 2%);
-}
-@media (max-width: 767px) {
-  .b-music-title {
-    font-size: 18px;
+  .justify-between {
+    justify-content: space-between;
   }
-}
-.b-music-info {
-  font-size: 16px;
-  font-weight: 600;
-  font-family: var(--font-regular);
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  color: var(--color-text-dimmed);
-}
-.b-music-year, .b-music-type {
-  background: var(--color-dark) url("https://media.publit.io/file/pinheadgunpowder/paper.png");
-  padding: 4px;
-  transform: rotate(1deg);
-  clip-path: polygon(57% 3%, 100% 1%, 99% 40%, 95% 88%, 1% 100%, 0 2%);
-}
-.b-music-image {
-  position: relative;
-  overflow: hidden;
-}
-.b-music-image img {
-  filter: brightness(0.8);
-  aspect-ratio: 1/1;
-  height: auto;
-  object-fit: cover;
-  transition: filter 0.2s ease-out;
-  width: 100%;
-}
-a:hover .b-music-image img {
-  filter: brightness(1.2);
-}
-
-.b-video {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 767px) {
-  .b-video {
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+  .justify-end {
+    justify-content: flex-end;
   }
-}
-.b-video-link {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  text-decoration: none;
-}
-.b-video-link:hover .b-video-title {
-  transform: rotate(3deg);
-}
-.b-video-title {
-  font-family: var(--font-regular);
-  font-size: 18px;
-  background-image: url("https://media.publit.io/file/pinheadgunpowder/paper.png");
-  background-color: var(--color-secondary);
-  background-size: cover;
-  color: var(--color-bg);
-  font-weight: 600;
-  padding: 10px 10px;
-  clip-path: polygon(57% 3%, 100% 1%, 99% 40%, 95% 88%, 1% 100%, 0 2%);
-}
-@media (max-width: 767px) {
-  .b-video-title {
-    font-size: 14px;
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
-}
-.b-video-image {
-  position: relative;
-  overflow: hidden;
-}
-.b-video-image img {
-  aspect-ratio: 32/18;
-  height: auto;
-  object-fit: cover;
-  width: 100%;
-}
-
-.b-photo {
-  --space: 4px;
-  --min-height: 150px;
-  --last-row-background: rgba(255, 255, 255, 0);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space);
-  padding: 0 0 50px;
-}
-@media (max-width: 1023px) {
-  .b-photo {
-    --min-height: 110px;
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
-}
-@media (max-width: 767px) {
-  .b-photo {
-    --min-height: 100px;
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
-}
-.b-photo::after {
-  content: "";
-  flex-grow: 1000000000;
-  background: var(--last-row-background);
-}
-.b-photo-item {
-  flex-grow: calc(var(--width) * 100000 / var(--height));
-  flex-basis: calc(var(--min-height) * var(--width) / var(--height));
-  aspect-ratio: var(--width)/var(--height);
-  position: relative;
-  overflow: hidden;
-}
-.b-photo img {
-  filter: brightness(0.7);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.b-photo img:hover {
-  filter: brightness(1.2);
-}
-
-.pswp {
-  font-family: var(--font-regular);
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .md\:col-span-5 {
+    @media (width >= 48rem) {
+      grid-column: span 5 / span 5;
+    }
+  }
+  .md\:col-span-7 {
+    @media (width >= 48rem) {
+      grid-column: span 7 / span 7;
+    }
+  }
+  .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .lg\:col-span-3 {
+    @media (width >= 64rem) {
+      grid-column: span 3 / span 3;
+    }
+  }
+  .lg\:col-span-4 {
+    @media (width >= 64rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .lg\:w-5xl {
+    @media (width >= 64rem) {
+      width: var(--container-5xl);
+    }
+  }
+  .xl\:col-span-2 {
+    @media (width >= 80rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .xl\:col-span-3 {
+    @media (width >= 80rem) {
+      grid-column: span 3 / span 3;
+    }
+  }
+  .xl\:col-span-4 {
+    @media (width >= 80rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
 }

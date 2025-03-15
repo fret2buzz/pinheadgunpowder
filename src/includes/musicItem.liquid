@@ -6,20 +6,21 @@
     {%- assign imageUrl = item.imageUrl -%}
 {%- endif -%}
 
-<div class="b-music-item">
-    <a class="b-music-link" href="{{ item.link }}">
-        <div class="b-music-image">
+<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col">
+    <a class="block" href="{{ item.link }}">
+        <div class="block">
             <img
                 src="{{ imageUrl }}"
                 loading="lazy"
                 alt="{{ item.title }}"
+                class="aspect-square mx-auto object-cover w-full"
             />
         </div>
 
-        <div class="b-music-title">{{ item.title }}</div>
-        <div class="b-music-info">
-            <div class="b-music-year">{{ item.year }}</div>
-            <div class="b-music-type">{{ item.type }}</div>
+        <div class="uppercase text-lg">{{ item.title }}</div>
+        <div class="flex gap-2 justify-between">
+            <div class="">{{ item.year }}</div>
+            <div class="">{{ item.type }}</div>
         </div>
     </a>
 </div>

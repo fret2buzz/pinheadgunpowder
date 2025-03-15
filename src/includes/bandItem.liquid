@@ -1,13 +1,14 @@
-<div class="b-band-item">
+<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col text-center">
     <img
         src="{{ item.image }}"
         loading="lazy"
         width="300"
         height="400"
         alt="{{ item.name }}"
+        class="mx-auto"
     >
-    <div class="b-band-label">
-        <div class="b-band-name">{{ item.name }}</div>
-        <span class="b-band-type">{{ item.role }}</span>
+    <div class="">
+        <div class="uppercase">{{ item.name }}</div>
+        <span class="">{{ item.role }}</span>
     </div>
 </div>

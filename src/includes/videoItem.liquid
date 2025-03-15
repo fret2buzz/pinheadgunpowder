@@ -1,13 +1,14 @@
-<div class="b-video-item">
-    <a class="b-video-link" href="https://www.youtube.com/watch?v={{ item.videoId }}">
-        <div class="b-video-image">
+<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col">
+    <a class="block" href="https://www.youtube.com/watch?v={{ item.videoId }}">
+        <div class="block">
             <img
                 src="https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg"
                 loading="lazy"
                 alt="{{ item.title }}"
+                class="aspect-video mx-auto object-cover w-full"
             />
         </div>
 
-        <div class="b-video-title">{{ item.title }}</div>
+        <div class="">{{ item.title }}</div>
     </a>
 </div>

@@ -1,10 +1,11 @@
 const util = require('util');
-const { DateTime } = require("luxon");
 
 module.exports = function (config) {
     config.addFilter('console', function (value) {
         return util.inspect(value);
     });
+
+     config.addPassthroughCopy("src/assets");
 
     // You can return your Config object (optional).
     return {
@@ -12,7 +13,7 @@ module.exports = function (config) {
             input: 'src',
             output: 'public',
             includes: 'includes',
-            layouts: 'layouts',
+            layouts: 'layouts'
         },
         dataTemplateEngine: 'liquid',
         markdownTemplateEngine: 'liquid',

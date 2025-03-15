@@ -6,88 +6,70 @@
         <title>Pinhead Gunpowder</title>
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/photoswipe.css">
-        <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon/favicon-192.png">
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Apple Touch Icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-apple.png">
         <script src="js/main.js" type="module"></script>
     </head>
-    <body class="b-page">
-        <header class="b-header">
-            <div class="b-header-logo">
-                <a class="b-header-logo_link" href="#top">
-                    <img src="https://media.publit.io/file/pinheadgunpowder/logo-m.webp" width="680" height="58" alt="">
-                </a>
-            </div>
-
-            <div class="b-nav">
-                <ul class=b-nav-list>
-                    {%- for item in sections -%}
-                        <li class="b-nav-list_item">
-                            <a class="b-nav-list_link m-{{ forloop.index }}" href="#{{item.id}}">
-                                <span>{{ item.name }}</span>
-                            </a>
-                        </li>
-                    {%- endfor -%}
-                </ul>
-            </div>
-        </header>
-
-        <div id="top" class="b-logo">
-            <div class="b-logo-image">
-                <img
-                    class="b-logo-in"
-                    src="https://media.publit.io/file/pinheadgunpowder/logo.webp"
-                    width="694"
-                    height="111"
-                    alt="Pinhead Gunpowder"
-                >
-            </div>
+    <body class="bg-gray-500 text-white">
+        <div class="lg:w-5xl mx-auto bg-gray-800 p-5">
+            <header class="grid grid-cols-12 gap-4 items-center pb-5">
+                <div class="col-span-12 md:col-span-7">
+                    <img src="https://media.publit.io/file/pinheadgunpowder/logo.webp" width="694" height="111" alt="Pinhead Gunpowder" />
+                </div>
+                <div class="col-span-12 md:col-span-5">
+                    <ul class="flex justify-end gap-3">
+                        {%- for item in sections -%}
+                            <li>
+                                <a class="uppercase" href="#{{item.id}}">
+                                    <span>{{ item.name }}</span>
+                                </a>
+                            </li>
+                        {%- endfor -%}
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <section id="band">
+                    <h1 class="text-center uppercase text-6xl">Band</h1>
+                    <div class="grid grid-cols-12 gap-4">
+                        {%- assign bandData = band | reverse -%}
+                        {%- for item in bandData -%}
+                            {%- include 'bandItem' -%}
+                        {%- endfor -%}
+                    </div>
+                </section>
+                <section id="music" class="l-base-section">
+                    <h1 class="text-center uppercase text-6xl">Music</h1>
+                    <div class="grid grid-cols-12 gap-4">
+                        {%- assign musicData = music | reverse -%}
+                        {%- for item in musicData -%}
+                            {%- include 'musicItem' -%}
+                        {%- endfor -%}
+                    </div>
+                </section>
+                <section id="video" class="l-base-section">
+                    <h1 class="text-center uppercase text-6xl">Video</h1>
+                    <div class="grid grid-cols-12 gap-4">
+                        {%- assign videoData = video | reverse -%}
+                        {%- for item in videoData -%}
+                            {%- include 'videoItem' -%}
+                        {%- endfor -%}
+                    </div>
+                </section>
+                <section style="display: none;" id="photos" class="l-base-section">
+                    <h1 class="b-title m-4"><span>Photos</span></h1>
+                    <div class="l-base-container b-photo">
+                        {%- assign photoData = photos | reverse -%}
+                        {%- for item in photoData -%}
+                            {%- include 'photosItem' -%}
+                        {%- endfor -%}
+                    </div>
+                </section>
+            </main>
         </div>
-
-        <div id="sticky"></div>
-
-        <main class="l-base-main">
-            <section id="band" class="l-base-section">
-                <h1 class="b-title m-1"><span>Band</span></h1>
-
-                <div class="l-base-container b-band">
-                    {%- assign bandData = band | reverse -%}
-                    {%- for item in bandData -%}
-                        {%- include 'bandItem' -%}
-                    {%- endfor -%}
-                </div>
-            </section>
-
-            <section id="music" class="l-base-section">
-                <h1 class="b-title m-2"><span>Music</span></h1>
-
-                <div class="l-base-container b-music">
-                    {%- assign musicData = music | reverse -%}
-                    {%- for item in musicData -%}
-                        {%- include 'musicItem' -%}
-                    {%- endfor -%}
-                </div>
-            </section>
-
-            <section id="video" class="l-base-section">
-                <h1 class="b-title m-3"><span>Video</span></h1>
-
-                <div class="l-base-container b-video">
-                    {%- assign videoData = video | reverse -%}
-                    {%- for item in videoData -%}
-                        {%- include 'videoItem' -%}
-                    {%- endfor -%}
-                </div>
-            </section>
-
-            <section id="photos" class="l-base-section">
-                <h1 class="b-title m-4"><span>Photos</span></h1>
-
-                <div class="l-base-container b-photo">
-                    {%- assign photoData = photos | reverse -%}
-                    {%- for item in photoData -%}
-                        {%- include 'photosItem' -%}
-                    {%- endfor -%}
-                </div>
-            </section>
-        </main>
     </body>
 </html>
