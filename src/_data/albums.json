@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Unt",
+        "picture": "new-001.jpg",
+        "year": 2024,
+        "tracklist": [
+            {
+                "song": "Unt",
+                "url": "https://www.youtube.com/watch?v=CY0wzQsyDEg"
+            },
+            {
+                "song": "Difficult but Not Impossible",
+                "url": false
+            },
+            {
+                "song": "Scum of the Earth",
+                "url": "https://www.youtube.com/watch?v=OjWojdhYbTc"
+            },
+            {
+                "song": "Oh My",
+                "url": "https://www.youtube.com/watch?v=MUjf3X1Jufw"
+            },
+            {
+                "song": "Nothing Ever Happens",
+                "url": "https://www.youtube.com/watch?v=yLPyOdgw0Vc"
+            },
+            {
+                "song": "Draw It In",
+                "url": false
+            },
+            {
+                "song": "Shine",
+                "url": "https://www.youtube.com/watch?v=lS0BZo2szuo"
+            },
+            {
+                "song": "¡Hola Canada!",
+                "url": "https://www.youtube.com/watch?v=lyNKXQ4nnJc"
+            },
+            {
+                "song": "Here Goes the Neighborhood",
+                "url": false
+            },
+            {
+                "song": "Mumbles",
+                "url": "https://www.youtube.com/watch?v=1Pfi96CRIak"
+            },
+            {
+                "song": "Green",
+                "url": false
+            },
+            {
+                "song": "Chowchilla",
+                "url": "https://www.youtube.com/watch?v=vZZbn0HBYF4"
+            },
+            {
+                "song": "Trash TV",
+                "url": false
+            },
+            {
+                "song": "Song For Myself (Harry Chapin cover)",
+                "url": false
+            }
+        ]
+    },
+    {
+        "name": "Shoot The Moon",
+        "picture": "shoot-006.jpg",
+        "year": 1999,
+        "tracklist": [
+            {
+                "song": "Cabot Gal",
+                "url": false
+            },
+            {
+                "song": "My Boot in Your Face Is What Keeps Me Alive",
+                "url": "https://www.youtube.com/watch?v=CoD8x3M56l8"
+            },
+            {
+                "song": "Asheville",
+                "url": "https://www.youtube.com/watch?v=ZtkOZX_3eWQ"
+            },
+            {
+                "song": "Junkpile",
+                "url": "https://www.youtube.com/watch?v=yjcnXaq0ib0"
+            },
+            {
+                "song": "27",
+                "url": "https://www.youtube.com/watch?v=mte54MkCMQ0"
+            },
+            {
+                "song": "Kathleen",
+                "url": "https://www.youtube.com/watch?v=MwyBCrTR2JY"
+            },
+            {
+                "song": "Achin' to Be",
+                "url": "https://www.youtube.com/watch?v=9fKT4aAxxLs"
+            }
+        ]
+    }
+]

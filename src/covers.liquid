@@ -1,0 +1,65 @@
+---
+layout: page.liquid
+tags: [pages]
+name: Covers
+---
+
+<section id="covers" class="scroll-mt-25">
+    <h1 class="sr-only">{{ name }}</h1>
+    <div class="flex flex-col gap-8">
+        {%- for album in albums -%}
+            <div>
+                <div class="grid grid-cols-6 gap-4 lg:grid-cols-12">
+                    <div class="col-span-6 lg:col-span-3">
+                        <picture>
+                            <source
+                                srcset="
+                                https://media.publit.io/file/h_480/pinheadgunpowder1/{{ album.picture }} 480w,
+                                https://media.publit.io/file/h_480/pinheadgunpowder1/{{ album.picture }} 800w,
+                                https://media.publit.io/file/h_260/pinheadgunpowder1/{{ album.picture }} 1200w"
+                                sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+                                type="image/jpeg"
+                            >
+
+                            <img
+                                src="https://media.publit.io/file/h_260/pinheadgunpowder1/{{ album.picture }}"
+                                loading="lazy"
+                                alt="{{ album.name }}"
+                                class="aspect-square mx-auto object-cover w-full"
+                            >
+                        </picture>
+                    </div>
+                    <div class="col-span-6 lg:col-span-9">
+                        <h2 class="uppercase font-bold text-3xl pb-3 text-primary">
+                            <span>{{- album.name -}}</span> - <span>{{- album.year -}}</span>
+                        </h2>
+
+                        <ol class="list-inside list-decimal">
+                            {%- for track in album.tracklist -%}
+                                <li class="flex flex-row justify-between px-2 py-1 [&:nth-child(even)]:bg-gray-950">
+                                    <div class="p-1 text-lg">{{ track.song }}</div>
+                                    {%- if track.url -%}
+                                        <div>
+                                            <a
+                                                href="{{ track.url }}"
+                                                class="text-md uppercase font-bold p-1 inline-flex gap-2 items-center bg-primary hover:bg-black text-white"
+                                            >
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                                                </svg>
+
+                                                <span>Watch</span>
+                                            </a>
+                                        </div>
+                                    {%- endif -%}
+                                </li>
+                            {%- endfor -%}
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        {%- endfor -%}
+    </div>
+</section>
