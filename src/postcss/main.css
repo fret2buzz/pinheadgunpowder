@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-sans: "Roboto Condensed", sans-serif;
+    --color-primary: #22a7ac;
+    --color-secondary: #927c56;
+}
+
+@layer components {
+    .b-photo {
+        --space: 4px;
+        --min-height: 150px;
+        --last-row-background: rgba(255, 255, 255, 0);
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space);
+    }
+
+    @media (max-width: 1023px) {
+        .b-photo {
+            --min-height: 110px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .b-photo {
+            --min-height: 100px;
+        }
+    }
+
+    .b-photo::after {
+        content: "";
+        flex-grow: 1000000000;
+        background: var(--last-row-background);
+    }
+
+    .b-photo-item {
+        flex-grow: calc(var(--width) * 100000 / var(--height));
+        flex-basis: calc(var(--min-height) * var(--width) / var(--height));
+        aspect-ratio: var(--width)/var(--height);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .b-photo img {
+        filter: brightness(0.9);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .b-photo img:hover {
+        filter: brightness(1.1);
+    }
+
+    .pswp {
+        font-family: var(--font-sans);
+    }
+}
+
+@layer utilities {
+    .custom-bg-paper {
+        background-image: url("https://media.publit.io/file/pinheadgunpowder/paper.png");
+        background-size: cover;
+        clip-path: polygon(57% 3%, 100% 1%, 99% 40%, 95% 100%, 1% 100%, 0 2%);
+    }
+}

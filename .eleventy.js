@@ -5,7 +5,7 @@ module.exports = function (config) {
         return util.inspect(value);
     });
 
-     config.addPassthroughCopy("src/assets");
+    config.addPassthroughCopy({ "src/assets": "./" });
 
     // You can return your Config object (optional).
     return {

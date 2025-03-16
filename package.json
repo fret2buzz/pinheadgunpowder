@@ -6,8 +6,8 @@
   "scripts": {
     "build:el": "npx @11ty/eleventy --config=.eleventy.js",
     "serve:el": "npx @11ty/eleventy --config=.eleventy.js --serve",
-    "build:css": "npx postcss src/css/main.css -o public/css/main.css",
-    "watch:css": "npx postcss src/css/main.css -o public/css/main.css -w"
+    "build:css": "npx postcss src/postcss/main.css -o public/css/main.css",
+    "watch:css": "npx postcss src/postcss/main.css -o public/css/main.css -w"
   },
   "author": "",
   "license": "ISC",

@@ -1,6 +1,6 @@
 <div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col">
-    <a class="block" href="https://www.youtube.com/watch?v={{ item.videoId }}">
-        <div class="block">
+    <a class="block text-primary brightness-90 hover:brightness-110 hover:text-white" href="https://www.youtube.com/watch?v={{ item.videoId }}">
+        <div class="block rotate-2">
             <img
                 src="https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg"
                 loading="lazy"
@@ -9,6 +9,6 @@
             />
         </div>
 
-        <div class="">{{ item.title }}</div>
+        <div class="font-ьувшгь text-md py-1 px-2 bg-black text-inherit -rotate-1 custom-bg-paper">{{ item.title }}</div>
     </a>
 </div>

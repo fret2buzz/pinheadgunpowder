@@ -7,7 +7,7 @@
 {%- endif -%}
 
 <div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col">
-    <a class="block" href="{{ item.link }}">
+    <a class="block brightness-90 hover:brightness-110" href="{{ item.link }}">
         <div class="block">
             <img
                 src="{{ imageUrl }}"
@@ -17,10 +17,10 @@
             />
         </div>
 
-        <div class="uppercase text-lg">{{ item.title }}</div>
+        <div class="inline-block uppercase font-bold text-md py-1 px-3 rotate-2 custom-bg-paper bg-red-950">{{ item.title }}</div>
         <div class="flex gap-2 justify-between">
-            <div class="">{{ item.year }}</div>
-            <div class="">{{ item.type }}</div>
+            <div class="py-1 px-3 -rotate-2 custom-bg-paper bg-blue-950">{{ item.year }}</div>
+            <div class="py-1 px-3 -rotate-3 custom-bg-paper bg-blue-950">{{ item.type }}</div>
         </div>
     </a>
 </div>

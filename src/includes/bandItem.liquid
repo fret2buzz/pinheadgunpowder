@@ -1,14 +1,14 @@
-<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col text-center">
+<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 flex-col text-center">
     <img
         src="{{ item.image }}"
         loading="lazy"
         width="300"
         height="400"
         alt="{{ item.name }}"
-        class="mx-auto"
+        class="mx-auto hover:scale-120 hover:rotate-5"
     >
-    <div class="">
-        <div class="uppercase">{{ item.name }}</div>
-        <span class="">{{ item.role }}</span>
+    <div class="flex flex-col">
+        <div><span class="inline-block uppercase font-bold text-3xl py-1 px-3 bg-secondary rotate-2 custom-bg-paper">{{ item.name }}</span></div>
+        <div><span class="inline-block uppercase font-medium text-lg py-1 px-4 -rotate-2 custom-bg-paper bg-red-950">{{ item.role }}</span></div>
     </div>
 </div>
