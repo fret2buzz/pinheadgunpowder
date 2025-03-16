@@ -7,6 +7,8 @@
       "Courier New", monospace;
     --color-red-950: oklch(0.258 0.092 26.042);
     --color-blue-950: oklch(0.282 0.091 267.935);
+    --color-gray-300: oklch(0.872 0.01 258.338);
+    --color-gray-400: oklch(0.707 0.022 261.325);
     --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-800: oklch(0.278 0.033 256.848);
     --color-black: #000;
@@ -281,6 +283,9 @@
   .w-full {
     width: 100%;
   }
+  .origin-top-left {
+    transform-origin: top left;
+  }
   .-rotate-1 {
     rotate: calc(1deg * -1);
   }
@@ -366,8 +371,14 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
@@ -428,10 +439,31 @@
       }
     }
   }
+  .hover\:rotate-3 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 3deg;
+      }
+    }
+  }
   .hover\:rotate-5 {
     &:hover {
       @media (hover: hover) {
         rotate: 5deg;
+      }
+    }
+  }
+  .hover\:text-gray-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-300);
+      }
+    }
+  }
+  .hover\:text-gray-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-400);
       }
     }
   }
