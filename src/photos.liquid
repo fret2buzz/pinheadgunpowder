@@ -1,0 +1,16 @@
+---
+layout: page.liquid
+tags: [pages]
+name: Photos
+order: 1
+---
+
+<section id="photos" class="scroll-mt-25">
+    <h1 class="sr-only">{{ name }}</h1>
+    <div class="b-photo">
+        {%- assign photoData = photos | reverse -%}
+        {%- for item in photoData -%}
+            {%- include 'photosItem' -%}
+        {%- endfor -%}
+    </div>
+</section>

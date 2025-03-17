@@ -10,9 +10,5 @@
     {
         "name": "Video",
         "id": "video"
-    },
-    {
-        "name": "Photos",
-        "id": "photos"
     }
 ]
