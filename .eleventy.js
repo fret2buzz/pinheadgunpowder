@@ -14,7 +14,6 @@ module.exports = function (config) {
             let bb = b.data.order == undefined ? 0 : b.data.order;
             return aa - bb;
         });
-        console.log(newValues);
         return newValues;
     });
 
