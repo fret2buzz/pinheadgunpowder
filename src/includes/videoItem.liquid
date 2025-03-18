@@ -1,14 +1,19 @@
-<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col">
-    <a class="block text-primary brightness-90 hover:brightness-110 hover:text-white" href="https://www.youtube.com/watch?v={{ item.videoId }}">
+<div class="col-span-6 flex flex-col gap-2 lg:col-span-3 xl:col-span-3">
+    <a
+        class="text-primary block brightness-90 hover:text-white hover:brightness-110"
+        href="https://www.youtube.com/watch?v={{ item.videoId }}"
+    >
         <div class="block rotate-2">
             <img
                 src="https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg"
                 loading="lazy"
                 alt="{{ item.title }}"
-                class="aspect-video mx-auto object-cover w-full"
-            />
+                class="mx-auto aspect-video w-full object-cover"
+            >
         </div>
 
-        <div class="font-medium text-md py-1 px-2 bg-black text-inherit -rotate-1 custom-bg-paper">{{ item.title }}</div>
+        <div class="text-md custom-bg-paper -rotate-1 bg-black px-2 py-1 font-medium text-inherit">
+            {{ item.title }}
+        </div>
     </a>
 </div>

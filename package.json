@@ -7,7 +7,9 @@
     "build:el": "npx @11ty/eleventy --config=.eleventy.js",
     "serve:el": "npx @11ty/eleventy --config=.eleventy.js --serve",
     "build:css": "npx postcss src/postcss/main.css -o public/css/main.css",
-    "watch:css": "npx postcss src/postcss/main.css -o public/css/main.css -w"
+    "watch:css": "npx postcss src/postcss/main.css -o public/css/main.css -w",
+    "prettier:write": "npx prettier --write  **/*.liquid",
+    "prettier:check": "npx prettier --check **/*.liquid"
   },
   "author": "",
   "license": "ISC",

@@ -1,27 +1,28 @@
 {%- if item.image -%}
-    {%- assign baseUrl = "https://i.ytimg.com/vi/" -%}
-    {%- assign imagePath = item.image | append: "/hqdefault.jpg" -%}
+    {%- assign baseUrl = 'https://i.ytimg.com/vi/' -%}
+    {%- assign imagePath = item.image | append: '/hqdefault.jpg' -%}
     {%- assign imageUrl = baseUrl | append: imagePath -%}
 {%- else -%}
     {%- assign imageUrl = item.imageUrl -%}
 {%- endif -%}
 
-<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 gap-2 flex-col">
+<div class="col-span-6 flex flex-col gap-2 lg:col-span-3 xl:col-span-3">
     <a class="block brightness-90 hover:brightness-110" href="{{ item.link }}">
         <div class="block">
             <img
                 src="{{ imageUrl }}"
                 loading="lazy"
                 alt="{{ item.title }}"
-                class="aspect-square mx-auto object-cover w-full"
-            />
+                class="mx-auto aspect-square w-full object-cover"
+            >
         </div>
 
-        <div class="inline-block uppercase font-bold text-md py-1 px-3 rotate-2 custom-bg-paper bg-red-950">{{ item.title }}</div>
-        <div class="flex gap-2 justify-between">
-            <div class="py-1 px-3 -rotate-2 custom-bg-paper bg-blue-950">{{ item.year }}</div>
-            <div class="py-1 px-3 -rotate-3 custom-bg-paper bg-blue-950">{{ item.type }}</div>
+        <div class="text-md custom-bg-paper inline-block rotate-2 bg-red-950 px-3 py-1 font-bold uppercase">
+            {{ item.title }}
+        </div>
+        <div class="flex justify-between gap-2">
+            <div class="custom-bg-paper -rotate-2 bg-blue-950 px-3 py-1">{{ item.year }}</div>
+            <div class="custom-bg-paper -rotate-3 bg-blue-950 px-3 py-1">{{ item.type }}</div>
         </div>
     </a>
 </div>
-

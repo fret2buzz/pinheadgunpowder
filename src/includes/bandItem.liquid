@@ -1,4 +1,4 @@
-<div class="flex col-span-6 lg:col-span-3 xl:col-span-3 flex-col text-center">
+<div class="col-span-6 flex flex-col text-center lg:col-span-3 xl:col-span-3">
     <img
         src="{{ item.image }}"
         loading="lazy"
@@ -7,8 +7,16 @@
         alt="{{ item.name }}"
         class="mx-auto hover:scale-120 hover:rotate-5"
     >
-    <div class="flex flex-col -mt-5">
-        <div><span class="inline-block uppercase font-bold text-3xl py-1 px-3 bg-secondary rotate-2 custom-bg-paper">{{ item.name }}</span></div>
-        <div><span class="inline-block uppercase font-medium text-lg py-1 px-4 -rotate-2 custom-bg-paper bg-red-950">{{ item.role }}</span></div>
+    <div class="-mt-5 flex flex-col">
+        <div>
+            <span class="bg-secondary custom-bg-paper inline-block rotate-2 px-3 py-1 text-3xl font-bold uppercase">
+                {{- item.name -}}
+            </span>
+        </div>
+        <div>
+            <span class="custom-bg-paper inline-block -rotate-2 bg-red-950 px-4 py-1 text-lg font-medium uppercase">
+                {{- item.role -}}
+            </span>
+        </div>
     </div>
 </div>
