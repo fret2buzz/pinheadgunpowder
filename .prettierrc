@@ -1,0 +1,8 @@
+{
+    "plugins": [
+        "prettier-plugin-tailwindcss",
+        "@shopify/prettier-plugin-liquid"
+    ],
+    "tabWidth": 4,
+    "useTabs": false
+}
