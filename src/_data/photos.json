@@ -615,6 +615,11 @@
         "height": 1200
     },
     {
+        "public_id": "west",
+        "width": 588,
+        "height": 600
+    },
+    {
         "public_id": "shoot-001",
         "width": 1440,
         "height": 1440

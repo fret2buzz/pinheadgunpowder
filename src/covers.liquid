@@ -6,6 +6,21 @@ order: 2
 ---
 <section id="covers" class="scroll-mt-25">
     <h1 class="sr-only">{{ name }}</h1>
+    <ul class="flex flex-wrap gap-1 pb-8">
+        {%- for album in albums -%}
+            <li>
+                <a
+                    href="#{{ album.name | slugify }}"
+                    class="block bg-cyan-900 px-2 py-1 text-sm whitespace-nowrap text-white hover:bg-cyan-700"
+                >
+                    {{- album.name -}}
+                </a>
+            </li>
+        {%- endfor -%}
+    </ul>
+
+    <div class="pb-8">All covers are recorde by Jayden - guitarist and vocalist from Kansas city, Missouri</div>
+
     <div class="flex flex-col gap-8">
         {%- for album in albums -%}
             <div>
@@ -31,7 +46,10 @@ order: 2
                         </picture>
                     </div>
                     <div class="col-span-6 lg:col-span-9">
-                        <h2 class="text-primary pb-3 text-3xl font-bold uppercase">
+                        <h2
+                            class="text-primary scroll-mt-25 pb-3 text-3xl font-bold uppercase"
+                            id="{{ album.name | slugify }}"
+                        >
                             <span>{{- album.name -}}</span> - <span>{{- album.year -}}</span>
                         </h2>
 

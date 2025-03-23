@@ -63,7 +63,73 @@
         ]
     },
     {
-        "name": "Pinhead Gunpowder (EP)",
+        "name": "West Side Highway",
+        "picture": "west.jpg",
+        "year": 2008,
+        "tracklist": [
+            {
+                "song": "West Side Highway",
+                "url": "https://www.youtube.com/watch?v=QQABg8GkogA"
+            },
+            {
+                "song": "Anniversary Song (Guitar Cover)",
+                "url": "https://www.youtube.com/watch?v=uIBIiRk7naY"
+            }
+        ]
+    },
+    {
+        "name": "Compulsive Disclosure",
+        "picture": "compulsive-002.jpg",
+        "year": 2003,
+        "tracklist": [
+            {
+                "song": "Buffalo",
+                "url": false
+            },
+            {
+                "song": "2nd Street",
+                "url": "https://www.youtube.com/watch?v=Dm2xNTm5RIA"
+            },
+            {
+                "song": "Landlords",
+                "url": false
+            },
+            {
+                "song": "Porch",
+                "url": false
+            },
+            {
+                "song": "Salting Agents",
+                "url": "https://www.youtube.com/watch?v=rDX50uQDudA"
+            },
+            {
+                "song": "Letter from an Old Friend",
+                "url": "https://www.youtube.com/watch?v=CfQZNnIAXOs"
+            },
+            {
+                "song": "New Blood",
+                "url": "https://www.youtube.com/watch?v=PIO9cKezplQ"
+            },
+            {
+                "song": "El Lasso Grappo",
+                "url": "https://www.youtube.com/watch?v=L37Ka4S2XHk"
+            },
+            {
+                "song": "Black Mountain Pt.3",
+                "url": "https://www.youtube.com/watch?v=_isa57Vr2lA"
+            },
+            {
+                "song": "Crazyhorse",
+                "url": false
+            },
+            {
+                "song": "At Your Funeral",
+                "url": "https://www.youtube.com/watch?v=bHlWgKPO97Q"
+            }
+        ]
+    },
+    {
+        "name": "Pinhead Gunpowder",
         "picture": "compulsive-002.jpg",
         "year": 2000,
         "tracklist": [
@@ -195,6 +261,61 @@
         ]
     },
     {
+        "name": "Jump Salty",
+        "picture": "salty-004.jpg",
+        "year": 1994,
+        "tracklist": [
+            {
+                "song": "Future Daydream",
+                "url": "https://www.youtube.com/watch?v=HKFRe_nv_w0"
+            },
+            {
+                "song": "Freedom Is...",
+                "url": false
+            },
+            {
+                "song": "I Wanna",
+                "url": false
+            },
+            {
+                "song": "Losers of the Year",
+                "url": false
+            },
+            {
+                "song": "Big Yellow Taxi",
+                "url": "https://www.youtube.com/watch?v=-wJKFP0sx1I"
+            },
+            {
+                "song": "Dull",
+                "url": false
+            },
+            {
+                "song": "Keeping Warm in the Nighttime",
+                "url": "https://www.youtube.com/watch?v=Xj2M_1X3QDM"
+            },
+            {
+                "song": "Beastly Bit",
+                "url": "https://www.youtube.com/watch?v=B0EB35jRTow"
+            },
+            {
+                "song": "Benicia by the Bay",
+                "url": "https://www.youtube.com/watch?v=B0a_q3RoUGc"
+            },
+            {
+                "song": "MPLS Song",
+                "url": "https://www.youtube.com/watch?v=8qZBHYXKy5s"
+            },
+            {
+                "song": "In Control",
+                "url": false
+            },
+            {
+                "song": "Hey Now",
+                "url": false
+            }
+        ]
+    },
+    {
         "name": "Carry the Banner",
         "picture": "carry-006.webp",
         "year": 1994,
@@ -238,7 +359,7 @@
         ]
     },
     {
-        "name": "Fahizah (EP)",
+        "name": "Fahizah",
         "picture": "fahizah-001.jpg",
         "year": 1992,
         "tracklist": [
@@ -261,7 +382,7 @@
         ]
     },
     {
-        "name": "Tründle and Spring (EP)",
+        "name": "Tründle and Spring",
         "picture": "trundle-003.jpg",
         "year": 1991,
         "tracklist": [
