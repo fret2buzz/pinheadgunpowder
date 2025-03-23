@@ -63,6 +63,44 @@
         ]
     },
     {
+        "name": "Pinhead Gunpowder (EP)",
+        "picture": "compulsive-002.jpg",
+        "year": 2000,
+        "tracklist": [
+            {
+                "song": "Buffalo",
+                "url": false
+            },
+            {
+                "song": "Crazyhorse",
+                "url": false
+            },
+            {
+                "song": "New Blood",
+                "url": "https://www.youtube.com/watch?v=PIO9cKezplQ"
+            },
+            {
+                "song": "Letter from an Old Friend",
+                "url": "https://www.youtube.com/watch?v=CfQZNnIAXOs"
+            }
+        ]
+    },
+    {
+        "name": "8 Chords, 328 Words",
+        "picture": "8chords-001.jpg",
+        "year": 2000,
+        "tracklist": [
+            {
+                "song": "Landlords",
+                "url": false
+            },
+            {
+                "song": "Black Mountain Pt. 3",
+                "url": "https://www.youtube.com/watch?v=_isa57Vr2lA"
+            }
+        ]
+    },
+    {
         "name": "Shoot The Moon",
         "picture": "shoot-006.jpg",
         "year": 1999,
@@ -94,6 +132,154 @@
             {
                 "song": "Achin' to Be",
                 "url": "https://www.youtube.com/watch?v=9fKT4aAxxLs"
+            }
+        ]
+    },
+    {
+        "name": "Goodbye Ellston Avenue",
+        "picture": "goodbye-008.jpg",
+        "year": 1997,
+        "tracklist": [
+            {
+                "song": "Life During Wartime",
+                "url": "https://www.youtube.com/watch?v=tkVkJL013uE"
+            },
+            {
+                "song": "Without Me",
+                "url": "https://www.youtube.com/watch?v=EeyTgYeYZFw"
+            },
+            {
+                "song": "High Maintenance",
+                "url": "https://www.youtube.com/watch?v=-z6rGNBdLL0"
+            },
+            {
+                "song": "Backyard Flames",
+                "url": "https://www.youtube.com/watch?v=tZ8Eny6V5oA"
+            },
+            {
+                "song": "Song of My Returning",
+                "url": "https://www.youtube.com/watch?v=F6yGs7-lgX0"
+            },
+            {
+                "song": "Once More W/O Feeling",
+                "url": "https://www.youtube.com/watch?v=sQsTCMzCAr4"
+            },
+            {
+                "song": "I Walk Alone",
+                "url": "https://www.youtube.com/watch?v=G76VklSoZ9Q"
+            },
+            {
+                "song": "Train Station",
+                "url": "https://www.youtube.com/watch?v=FMDqeEwuOwg"
+            },
+            {
+                "song": "Homesick Hopes",
+                "url": "https://www.youtube.com/watch?v=ZZyMJNx4GS4"
+            },
+            {
+                "song": "Brother",
+                "url": false
+            },
+            {
+                "song": "Swan Song",
+                "url": false
+            },
+            {
+                "song": "Work for Food",
+                "url": "https://www.youtube.com/watch?v=m5sBzZdyEVE"
+            },
+            {
+                "song": "The Great Divide",
+                "url": "https://www.youtube.com/watch?v=ObjQ6D1iFHA"
+            }
+        ]
+    },
+    {
+        "name": "Carry the Banner",
+        "picture": "carry-006.webp",
+        "year": 1994,
+        "tracklist": [
+            {
+                "song": "Find My Place",
+                "url": "https://www.youtube.com/watch?v=e0yzwmcslYc"
+            },
+            {
+                "song": "Before the Accident",
+                "url": "https://www.youtube.com/watch?v=KFyrU4CTftI"
+            },
+            {
+                "song": "I Used To",
+                "url": "https://www.youtube.com/watch?v=aK8LEGDHArI"
+            },
+            {
+                "song": "Reach for the Bottle",
+                "url": "https://www.youtube.com/watch?v=P3ypKlo2nKQ"
+            },
+            {
+                "song": "Walkin' Catastrophe",
+                "url": false
+            },
+            {
+                "song": "I Am an Elephant",
+                "url": "https://www.youtube.com/watch?v=0LWxEVwQOWY"
+            },
+            {
+                "song": "I Am the Stranger",
+                "url": "https://www.youtube.com/watch?v=VTVj6UPdFHY"
+            },
+            {
+                "song": "Certain Things",
+                "url": "https://www.youtube.com/watch?v=G4WnbMsxDYA"
+            },
+            {
+                "song": "Mahogany",
+                "url": "https://www.youtube.com/watch?v=iX5MHUUH-p8"
+            }
+        ]
+    },
+    {
+        "name": "Fahizah (EP)",
+        "picture": "fahizah-001.jpg",
+        "year": 1992,
+        "tracklist": [
+            {
+                "song": "Future Daydream",
+                "url": "https://www.youtube.com/watch?v=HKFRe_nv_w0"
+            },
+            {
+                "song": "Freedom Is...",
+                "url": false
+            },
+            {
+                "song": "Hey Now",
+                "url": false
+            },
+            {
+                "song": "Big Yellow Taxi",
+                "url": "https://www.youtube.com/watch?v=-wJKFP0sx1I"
+            }
+        ]
+    },
+    {
+        "name": "Tründle and Spring (EP)",
+        "picture": "trundle-003.jpg",
+        "year": 1991,
+        "tracklist": [
+            {
+                "song": "Dull",
+                "url": false
+            },
+            {
+                "song": "Keeping Warm in the Nighttime",
+                "url": "https://www.youtube.com/watch?v=Xj2M_1X3QDM"
+            },
+            {
+                "song": "MPLS Song",
+                "url": "https://www.youtube.com/watch?v=8qZBHYXKy5s"
+            },
+            {
+                "song": "In Control",
+                "url": false
             }
         ]
     }
