@@ -29,16 +29,16 @@ order: 2
                         <picture>
                             <source
                                 srcset="
-                                    https://media.publit.io/file/h_480/pinheadgunpowder1/{{ album.picture }} 480w,
-                                    https://media.publit.io/file/h_480/pinheadgunpowder1/{{ album.picture }} 800w,
-                                    https://media.publit.io/file/h_260/pinheadgunpowder1/{{ album.picture }} 1200w
+                                    https://res.cloudinary.com/vr201/image/upload/h_480/pinheadgunpowder/{{ album.picture }} 480w,
+                                    https://res.cloudinary.com/vr201/image/upload/h_480/pinheadgunpowder/{{ album.picture }} 800w,
+                                    https://res.cloudinary.com/vr201/image/upload/h_260/pinheadgunpowder/{{ album.picture }} 1200w
                                 "
                                 sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
                                 type="image/jpeg"
                             >
 
                             <img
-                                src="https://media.publit.io/file/h_260/pinheadgunpowder1/{{ album.picture }}"
+                                src="https://res.cloudinary.com/vr201/image/upload/h_260/pinheadgunpowder/{{ album.picture }}"
                                 loading="lazy"
                                 alt="{{ album.name }}"
                                 class="mx-auto aspect-square w-full object-cover"
